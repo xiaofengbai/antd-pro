@@ -1,0 +1,9 @@
+.wrap {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  :nth-child(1) {
+    width: 800px;
+    background-color: sandybrown;
+  }
+}

@@ -1,0 +1,38 @@
+:global {
+    #root {
+        height: 100%;
+    }
+    .ant-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+    }
+    .ant-menu-inline {
+        width: 100%;
+        height: 100%;
+    }
+    .ant-menu-inline-collapsed {
+        width: 65px;
+    }
+    .ant-layout-sider {
+        background-color: #fff;
+    }
+    .ant-menu-inline-collapsed > .ant-menu-item,
+    .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+    .ant-menu-inline-collapsed
+        > .ant-menu-item-group
+        > .ant-menu-item-group-list
+        > .ant-menu-submenu
+        > .ant-menu-submenu-title,
+    .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+        text-align: center;
+        padding: 0 !important;
+    }
+    .ant-layout-header {
+        background-color: #011529;
+    }
+    .menu-top {
+        display: inline-block;
+    }
+}
