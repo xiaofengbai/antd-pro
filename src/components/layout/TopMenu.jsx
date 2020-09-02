@@ -30,8 +30,7 @@ export const TopMenu = (props) => {
   };
 
   useEffect(() => {
-    topMenuSelectedKey;
-    const { pathname } = location;
+    const { pathname } = window.location;
     ininByPath(pathname);
   }, [topMenuSelectedKey]);
 
@@ -44,9 +43,10 @@ export const TopMenu = (props) => {
 
   return (
     <Menu
-      theme="light"
+      theme="dark"
       mode="horizontal"
       onClick={handClick}
+      className="menu-top"
       selectedKeys={selectedKeys}
     >
       {topMenuMaps.map((item, index) => {
